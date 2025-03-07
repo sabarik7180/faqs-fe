@@ -1,0 +1,114 @@
+/* Default styles (Mobile-first) */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Container for background */
+.bg-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Send background to back */
+}
+
+/* Top Background Image */
+.bg-img-1 {
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+    width: 100vw;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Bottom Background Color */
+.bg-img-2 {
+    background-color: #f9eeff;
+    width: 100vw;
+    height: calc(100vh - 250px);
+}
+
+/* Text Box (Overlay) */
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensures it stays on top */
+    max-width: 80%;
+    min-height: 60vh;
+    width:40vw;
+    height:auto;    
+    cursor:pointer;
+}
+
+.faq{
+    display: flex;
+    flex-direction: row;
+}
+
+.faq h1{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.faq img{
+    padding-bottom: 10px;
+}
+
+/* question inside the faq segment */
+
+.faq-all-Qs{
+    display: flex;
+    flex-direction: column;
+}
+
+.questions{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.toggle-btn b {
+    font-size: large;
+}
+
+.toggle-btn b:hover{
+    color: blue;
+}
+
+.toggle-btn{  
+    all: unset; /* Resets all inherited and user-agent styles */
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.toggle-btn img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .bg-img-1 {
+        background-image: url("./assets/images/background-pattern-desktop.svg");
+    }
+}

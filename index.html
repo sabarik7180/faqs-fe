@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-img-1"></div> 
+  <div class="bg-img-2"></div>
+  <div class="text-box">
+    <div class="faq">
+      <img src="./assets/images/icon-star.svg" alt="starSymbol">
+      <h1>FAQs</h1>
+    </div>
+    <!-- also i need to show content when minus symbol is present , show no content when minus symbol is shown . -->
+    <div class="faq-all-Qs">
+      <div id="q1" class="questions">
+          <button id="toggle-btn" class="toggle-btn" data-target="q1">
+            <b>What does true happiness mean to you, and how do you strive to achieve it?</b>
+            <img id = "toggle-img" src="./assets/images/icon-plus.svg" alt="plusImg">
+          </button>
+      </div>
+      <div id="q2" class="questions">
+          <button id="toggle-btn" class="toggle-btn" data-target="q2">
+            <b>How do you define success, and has your definition changed over time?</b>
+            <img id = "toggle-img" src="./assets/images/icon-plus.svg" alt="plusImg">
+          </button>
+      </div>
+      <div id="q3" class="questions">
+          <button id="toggle-btn" class="toggle-btn" data-target="q3">
+            <b>What defines success in life?</b>
+            <img id = "toggle-img" src="./assets/images/icon-plus.svg" alt="plusImg">
+          </button>
+      </div>
+      <div id="q4" class="questions">
+        <button id="toggle-btn" class="toggle-btn" data-target="q4">
+          <b> What is the hardest lesson life has taught you?</b>
+          <img id = "toggle-img" src="./assets/images/icon-plus.svg" alt="plusImg">
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="actions.js"></script> 
+</body>
+</html>
